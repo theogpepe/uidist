@@ -492,7 +492,7 @@ var Icon$Z = function (props) {
 var Icon$Y = function (props) {
     // URL to your PNG image
     var imageUrl = "https://pepex.app/pepex.png";
-    return (React.createElement("img", __assign({ src: imageUrl, width: '24px', alt: "Icon Description" }, props)));
+    return (React.createElement("img", __assign({ src: imageUrl, alt: "Icon Description" }, props)));
 };
 
 var Icon$X = function (props) {
@@ -616,9 +616,18 @@ var Icon$Q = function (props) {
 };
 
 var Icon$P = function (props) {
-    // URL to your PNG image
-    var imageUrl = "https://ogpepe.io/pepe.png";
-    return (React.createElement("img", __assign({ src: imageUrl, alt: "Icon Description" }, props)));
+    var theme = useTheme();
+    var primaryColor = theme.isDark ? "#3C3742" : "#e9eaeb";
+    var secondaryColor = theme.isDark ? "#666171" : "#bdc2c4";
+    return (React.createElement(Svg, __assign({ viewBox: "0 0 32 32" }, props),
+        React.createElement("path", { d: "M32 16c0 8.837-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0s16 7.163 16 16z", fill: primaryColor }),
+        React.createElement("mask", { id: "A", "mask-type": "alpha", maskUnits: "userSpaceOnUse", x: "0", y: "0", width: "32", height: "32" },
+            React.createElement("path", { d: "M32 16c0 8.837-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0s16 7.163 16 16z", fill: "#c4c4c4" })),
+        React.createElement("g", { mask: "url(#A)" },
+            React.createElement("path", { d: "M27.33,30.24V32H4.67v-1.76c0-3.81,5.07-6.91,11.33-6.91S27.33,26.43,27.33,30.24z", fill: secondaryColor }),
+            React.createElement("circle", { cx: "15.9", cy: "12.67", r: "9.41", fill: secondaryColor }),
+            React.createElement("path", { d: "M14.59,10.77c-0.28-0.28-0.65-0.43-1.04-0.43c-0.39,0-0.76,0.15-1.04,0.43l-0.15,0.14l-0.15-0.15\r\n\tc-0.28-0.28-0.65-0.43-1.04-0.43c-0.39,0-0.76,0.15-1.04,0.43c-0.28,0.28-0.43,0.65-0.43,1.04c0,0.39,0.15,0.76,0.43,1.04l2.11,2.11\r\n\tc0.03,0.03,0.07,0.05,0.11,0.05c0.04,0,0.08-0.02,0.11-0.04l2.12-2.11c0.28-0.28,0.43-0.65,0.43-1.04\r\n\tC15.02,11.42,14.87,11.05,14.59,10.77z", fill: "#ffffff" }),
+            React.createElement("path", { d: "M21.66,10.81c-0.28-0.28-0.65-0.43-1.04-0.43c-0.39,0-0.76,0.15-1.04,0.43l-0.15,0.14l-0.15-0.15\r\n\tc-0.28-0.28-0.65-0.43-1.04-0.43c-0.39,0-0.76,0.15-1.04,0.43c-0.28,0.28-0.43,0.65-0.43,1.04c0,0.39,0.15,0.76,0.43,1.04L19.33,15\r\n\tc0.03,0.03,0.07,0.05,0.11,0.05c0.04,0,0.08-0.02,0.11-0.04l2.12-2.11c0.28-0.28,0.43-0.65,0.43-1.04\r\n\tC22.09,11.46,21.94,11.09,21.66,10.81z", fill: "#ffffff" }))));
 };
 
 var Icon$O = function (props) {
@@ -627,9 +636,8 @@ var Icon$O = function (props) {
 };
 
 var Icon$N = function (props) {
-    // URL to your PNG image
-    var imageUrl = "https://ogpepe.io/pepe.png";
-    return (React.createElement("img", __assign({ src: imageUrl, alt: "Icon Description" }, props)));
+    return (React.createElement(Svg, __assign({ viewBox: "0 0 64 64" }, props),
+        React.createElement("path", { d: "M58.62,9.27c-3.32-3.32-7.73-5.14-12.42-5.14s-9.11,1.83-12.44,5.16l-1.74,1.74l-1.76-1.76\r\n\t\tc-3.32-3.32-7.75-5.17-12.45-5.17c-4.68,0-9.1,1.83-12.41,5.14c-3.32,3.32-5.16,7.74-5.14,12.44c0,4.7,1.84,9.1,5.17,12.42\r\n\t\tL30.7,59.37c0.35,0.35,0.82,0.54,1.28,0.54s0.93-0.17,1.28-0.52l25.33-25.24c3.32-3.32,5.16-7.74,5.16-12.44\r\n\t\tC63.76,17.01,61.94,12.6,58.62,9.27z M56.03,31.58L31.98,55.53l-24-24c-2.64-2.64-4.09-6.14-4.09-9.87s1.44-7.23,4.08-9.85\r\n\t\tc2.62-2.62,6.12-4.08,9.84-4.08c3.73,0,7.24,1.45,9.88,4.09l3.04,3.04c0.71,0.71,1.86,0.71,2.57,0l3.02-3.02\r\n\t\tc2.64-2.64,6.15-4.09,9.87-4.09s7.21,1.45,9.85,4.08c2.64,2.64,4.08,6.14,4.08,9.87C60.12,25.44,58.67,28.94,56.03,31.58z" })));
 };
 
 var Icon$M = function (props) {
@@ -3154,7 +3162,7 @@ var links = [
             },
             {
                 label: 'Docs',
-                href: 'https://github.com/theogpepe',
+                href: 'https://docs.pepex.app',
             },
         ],
     },
@@ -3163,12 +3171,12 @@ var socials = [
     {
         label: "Telegram",
         icon: "TelegramIcon",
-        href: "https://t.me/OgPeperc20 ",
+        href: "https://t.me/pepexapp",
     },
     {
         label: "Twitter",
         icon: "TwitterIcon",
-        href: "https://twitter.com/TheOGPepe2020",
+        href: "https://x.com/pepexapp",
     },
 ];
 var MENU_HEIGHT = 64;
@@ -3483,7 +3491,7 @@ var ConnectModal = function (_a) {
     var login = _a.login, _b = _a.onDismiss, onDismiss = _b === void 0 ? function () { return null; } : _b;
     return (React.createElement(Modal, { title: "Connect to a wallet", onDismiss: onDismiss },
         connectors.map(function (entry, index) { return (React.createElement(WalletCard, { key: entry.title, login: login, walletConfig: entry, onDismiss: onDismiss, mb: index < connectors.length - 1 ? "8px" : "0" })); }),
-        React.createElement(HelpLink, { href: "https://ogpepe.io/", external: true },
+        React.createElement(HelpLink, { href: "https://pepex.app/#/faq", external: true },
             React.createElement(Icon$11, { color: "primary", mr: "6px" }),
             "Learn how to connect")));
 };
@@ -3526,7 +3534,7 @@ var AccountModal = function (_a) {
     return (React.createElement(Modal, { title: "Your wallet", onDismiss: onDismiss },
         React.createElement(Text, { fontSize: "20px", bold: true, style: { whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", marginBottom: "8px" } }, account),
         React.createElement(Flex, { mb: "32px" },
-            React.createElement(LinkExternal, { small: true, href: "https://etherscan.io/address/" + account, mr: "16px" }, "View on Explorer"),
+            React.createElement(LinkExternal, { small: true, href: "https://scan.pulsechain.com/address/" + account, mr: "16px" }, "View on Explorer"),
             React.createElement(CopyToClipboard, { toCopy: account }, "Copy Address")),
         React.createElement(Flex, { justifyContent: "center" },
             React.createElement(Button, { scale: "sm", variant: "secondary", onClick: function () {
@@ -3565,7 +3573,7 @@ var Avatar = function (_a) {
     var link = profile.username ? profileLink : noProfileLink;
     var isExternal = link.startsWith("http");
     var ariaLabel = "Link to profile";
-    var icon = image ? (React.createElement("img", { src: image, alt: "profile avatar", height: "32px", width: "32px" })) : (React.createElement(Icon$P, null));
+    var icon = image ? (React.createElement("img", { src: image, alt: "profile avatar", height: "32px", width: "32px" })) : (React.createElement(Icon$P, { width: "32px", height: "32px" }));
     if (isExternal) {
         return (React.createElement(StyledAvatar, { title: username },
             React.createElement("a", { href: link, "aria-label": ariaLabel }, icon),
