@@ -504,13 +504,13 @@ var Icon$Z = function (props) {
 
 var Icon$Y = function (props) {
     // URL to your PNG image
-    var imageUrl = "https://ogpepe.io/p32.png";
+    var imageUrl = "https://pepex.app/pepex.png";
     return (React__default['default'].createElement("img", __assign({ src: imageUrl, width: '24px', alt: "Icon Description" }, props)));
 };
 
 var Icon$X = function (props) {
     // URL to your PNG image
-    var imageUrl = "https://ogpepe.io/p32.png";
+    var imageUrl = "https://pepex.app/pepex.png";
     return (React__default['default'].createElement("img", __assign({ src: imageUrl, alt: "Icon Description" }, props)));
 };
 
@@ -2965,10 +2965,10 @@ var Icon$e = function (props) {
 };
 
 var Logo$2 = function (props) {
-    var imageUrl = "https://ogpepe.io/p32.png";
+    var imageUrl = "https://pepex.app/pepex.png";
     return (React__default['default'].createElement(React__default['default'].Fragment, null,
-        React__default['default'].createElement("img", __assign({ src: imageUrl, alt: "Logo", style: { width: '32px' } }, props)),
-        React__default['default'].createElement("div", { style: { fontSize: '20px', color: '#66974C', fontWeight: 'bold' } }, "OGPEPE")));
+        React__default['default'].createElement("div", { style: { fontSize: '20px', color: '#66974C', fontWeight: 'bold', fontFamily: 'Comic Sans MS, cursive, sans-serif' } }, "Pepe"),
+        React__default['default'].createElement("img", __assign({ src: imageUrl, alt: "Logo", style: { width: '32px', margin: '0 -3px' } }, props))));
 };
 
 var Icon$d = function (props) {
@@ -3082,7 +3082,6 @@ var Logo = function (_a) {
     var isPushed = _a.isPushed, togglePush = _a.togglePush; _a.isDark; var href = _a.href;
     var isAbsoluteUrl = href.startsWith("http");
     var innerLogo = (React__default['default'].createElement(React__default['default'].Fragment, null,
-        React__default['default'].createElement(Icon$Y, null),
         React__default['default'].createElement(Logo$2, null)));
     return (React__default['default'].createElement(Flex, null,
         React__default['default'].createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React__default['default'].createElement(Icon$i, { width: "24px", color: "textSubtle" })) : (React__default['default'].createElement(Icon$j, { width: "24px", color: "textSubtle" }))),
@@ -3309,9 +3308,9 @@ var templateObject_1$a;
 var PriceLink = styled__default['default'].a(templateObject_1$9 || (templateObject_1$9 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"])));
 var PepePrice = function (_a) {
     var pepePriceUsd = _a.pepePriceUsd;
-    return pepePriceUsd ? (React__default['default'].createElement(PriceLink, { href: "https://swap.ogpepe.io/#/swap?inputCurrency=ETH&outputCurrency=0x4dFae3690b93c47470b03036A17B23C1Be05127C", target: "_blank" },
+    return pepePriceUsd ? (React__default['default'].createElement(PriceLink, { href: "https://pepex.app/#/swap?inputCurrency=ETH&outputCurrency=0x4dfae3690b93c47470b03036a17b23c1be05127c", target: "_blank" },
         React__default['default'].createElement(Icon$M, null),
-        React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + pepePriceUsd.toFixed(3)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 }));
+        React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + pepePriceUsd.toFixed(2)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 }));
 };
 var PepePrice$1 = React__default['default'].memo(PepePrice);
 var templateObject_1$9;
